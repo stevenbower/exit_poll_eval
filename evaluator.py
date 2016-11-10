@@ -18,8 +18,10 @@ def main():
         poll1 = polls1[pollName] 
         poll2 = polls2[pollName] 
 
+        print poll1["candidates"]
         for ans in poll1["answers"]:
-            print ans["candidateanswers"]
+            ans1 = ans["answer"]
+            print ans1, ans["candidateanswers"]
 
 
 if __name__ == "__main__":
